@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  width: 100vw;
+}
+.arr {
+  width: 90vw;
+}
