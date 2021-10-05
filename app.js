@@ -198,3 +198,23 @@ q7CreateButton.addEventListener("click", printArray);
 q7ClearButton.addEventListener("click", () => {
   ans7.innerText = " ";
 });
+
+const q8CreateButton = document.querySelector(".q8-create-btn");
+const q8ClearButton = document.querySelector(".q8-clear-btn");
+const q8Input = document.querySelector(".q8-input");
+const ans8 = document.querySelector(".ans8");
+
+function checkDay() {
+  let day = q8Input.value.slice(0, 1);
+  if (day == "s" || day == "S") {
+    ans8.innerText = q8Input.value + " is weekend";
+  } else {
+    ans8.innerText = q8Input.value + " is weekday";
+  }
+  q8Input.value = "";
+}
+
+q8CreateButton.addEventListener("click", checkDay);
+q8ClearButton.addEventListener("click", () => {
+  ans8.innerText = " ";
+});
