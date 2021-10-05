@@ -69,6 +69,7 @@ const q3Input = document.querySelector(".q3-input");
 const ans3 = document.querySelector(".ans3");
 
 function createTable() {
+  ans3.innerHTML = " ";
   for (i = 1; i < 13; i++) {
     j = i * q3Input.value;
     ans3.innerText += ` ${j}`;
